@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+ 
+}
+.background-image{
+    width: 50VW;
+    height: 100vh;  
+    background-image: url(./face-7.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
