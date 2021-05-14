@@ -1,0 +1,8 @@
+.content{
+  width: 50vw;
+  height: 50vh;
+  background-color: turquoise;
+  float:right;
+  position: relative;
+}
+
