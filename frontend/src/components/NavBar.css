@@ -12,7 +12,7 @@ nav{
 }
 
 nav ul {
-    width: 85%;
+    width: 80%;
     list-style: none;
     display: flex;
     align-items: center;
@@ -24,22 +24,18 @@ nav ul {
    
 }
 
-nav a{
-     text-decoration: none;    
-     font-weight: bold;
-     color: #9f9f9f;
+nav button{
+    all:unset;
+    color: #9f9f9f; 
+    font-weight: bold;
 }
 
-nav a:hover{
+nav button:hover{
     color: #3ebce2;
 }
 
-/* nav a:visited{
-    color:#8d8c8c
-} */
-
 nav img{
-    padding-top: 3em;
+    padding-top: 2em;
     width: 15vw;
 }
 

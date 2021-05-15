@@ -3,25 +3,18 @@ import {Link} from 'react-router-dom'
 
 import './NavBar.css'
 
-import AboutUs from './AboutUs';
-import Content from './Content'
 
-export default function NavBar() {
-
-//  const [layout, setLayout] = useState(content)
-
-
-
+export default function NavBar({setActive}) {
 
     return (
         <nav>
         <img src='/images/nafkar-logo.png' alt='nafkar logo'/>
             <ul>
-               <Link to='/about-us'><button onClick={()=>console.log('d')}>About us</button></Link> 
-               <Link to='/about-us'><li>Services</li></Link> 
-               <Link to='/about-us'><li>Gallery</li></Link>
-               <Link to='/about-us'><li>Book online</li></Link>
-               <Link to='/about-us'><li>Contact us</li></Link>
+               <button onClick={(e)=>setActive(e.target.innerText)}>About us</button>
+               <button onClick={(e)=>setActive(e.target.innerText)}>Services</button>
+               <button onClick={(e)=>setActive(e.target.innerText)}>Gallery</button>
+               <button onClick={(e)=>setActive(e.target.innerText)}>Book online</button>
+               <button onClick={(e)=>setActive(e.target.innerText)}>Contact us</button>
             </ul>
         </nav>
     )
