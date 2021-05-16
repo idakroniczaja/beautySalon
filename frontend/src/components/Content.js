@@ -19,7 +19,7 @@ export default function Content() {
             <div className='images'>
                 <img src='/images/toa-heftiba-hBLf2nvp-Yc-unsplash.jpg' alt='' width='25%'/>
                 <img src='/images/juja-han-Z8-6EI2tYtw-unsplash.jpg' alt='nafkar logo' width='25%'/>
-                <img src='/images/how-to-get-healthy-hair-640x411.jpg' alt='nafkar logo' width='25%'/>
+                <img src='/images/1111.jpg' alt='nafkar logo' width='25%'/>
                 <img src='/images/tommy-van-kessel-_tnkR2gu3kw-unsplash.jpg' alt='nafkar logo' width='25%'/>
             </div>
 

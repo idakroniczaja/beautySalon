@@ -4,7 +4,6 @@
     margin: 0;
     height: 100vh;
     width: 100vw;
-    
 
     }
 
@@ -19,4 +18,55 @@
 
 }
 
+@media(max-width:1024px){
 
+ .background-image{
+    margin-left: -3em; 
+    width: 60vw;
+ }
+
+  }
+
+  @media(max-width:768px){
+    .background-image{
+      width: 80vw;
+      margin-left: -10em;   
+    }
+    
+  }
+
+@media (max-width:650px){
+  .background-image{
+      width: 95vw;
+     
+  }
+}
+
+@media(max-width:580px){
+  .background-image {
+    height: 90vh;
+
+  }
+}
+
+@media (max-width:510px){
+  .background-image{
+      width: 110vw;
+  }
+
+}
+
+@media (max-width:375px){
+  .background-image {
+    width: 130vw;
+  
+  }
+}
+
+
+
+@media (max-width:320px){
+  .background-image {
+    width: 150vw;
+  }
+}

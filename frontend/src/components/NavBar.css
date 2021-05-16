@@ -1,17 +1,25 @@
 nav{
     z-index: 1;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
     height: 20vh;
     width: 66vw;
     float: right;
     position: relative;
-    z-index: 1;
-
+}
+nav .hamburger__menu{
+        cursor: pointer;
+        display: none;
+        color: #9f9f9f;
 }
 
-nav ul {
+.hamburger__menu:hover {
+    background: skyblue;
+}
+
+
+nav .nav-bar-full{
     width: 80%;
     list-style: none;
     display: flex;
@@ -20,8 +28,11 @@ nav ul {
     padding-right: 2em;
     font-size: 1.25em;
     font-family:cursive;
+}
 
-   
+nav .nav-bar-drop{
+    display: none;
+
 }
 
 nav button{
@@ -35,8 +46,82 @@ nav button:hover{
 }
 
 nav img{
-    padding-top: 2em;
     width: 15vw;
 }
 
 
+
+@media(max-width:1100px){
+ 
+    nav .nav-bar-full{
+        font-size: 1em;
+    }
+    nav img{
+        width: 13vw;
+        margin-left: 1em;
+    }
+    
+  }
+
+
+  /* @media(max-width:1030px){
+ 
+    nav .nav-bar-full{
+        font-size: 0.6em;
+    }
+
+    nav img{
+        width: 13vw;
+    }
+    
+  } */
+
+  @media(max-width:850px){
+      nav{
+          justify-content: space-around;
+          height: 17vh;
+          margin-bottom: 2em;
+      }
+      nav .nav-bar-full{
+          display: none;
+      }
+      nav img{
+          width: 20vw;
+
+      }
+
+      nav .nav-bar-drop{
+          display: flex;
+          flex-direction: column;
+          font-family:cursive;
+          position: absolute;
+          width: 6em;       
+          padding-top: 1em;
+      }
+  
+
+    nav .hamburger__menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+ 
+
+    }
+   
+  }
+
+  @media(max-width:850px){
+    nav .nav-bar-drop{
+        font-size: 0.9em;
+        padding-right: 3vw;
+        padding-top: 0.6em;
+    }
+  }
+
+  @media (max-width:375px){
+    nav .nav-bar-drop{
+        font-size: 0.8em;
+        padding-right: 5vw;
+    }
+  }

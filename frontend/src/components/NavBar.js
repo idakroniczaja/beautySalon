@@ -1,21 +1,48 @@
 import React, {useState} from 'react';
-import {Link} from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 import './NavBar.css'
 
 
 export default function NavBar({setActive}) {
+    const [toggle, setToggle]=useState(false)
+
+const bars = <FontAwesomeIcon icon={faBars} />
 
     return (
         <nav>
         <img src='/images/nafkar-logo.png' alt='nafkar logo'/>
-            <ul>
+
+
+            <ul className='nav-bar-full'>
                <button onClick={(e)=>setActive(e.target.innerText)}>About us</button>
                <button onClick={(e)=>setActive(e.target.innerText)}>Services</button>
                <button onClick={(e)=>setActive(e.target.innerText)}>Gallery</button>
                <button onClick={(e)=>setActive(e.target.innerText)}>Book online</button>
                <button onClick={(e)=>setActive(e.target.innerText)}>Contact us</button>
             </ul>
+        
+
+        
+            <div className='hamburger__menu' onClick={()=>setToggle(!toggle)}>
+            {bars}
+
+
+             {toggle && 
+             <ul className='nav-bar-drop' >
+             <button onClick={(e)=>setActive(e.target.innerText)}>About us</button>
+               <button onClick={(e)=>setActive(e.target.innerText)}>Services</button>
+               <button onClick={(e)=>setActive(e.target.innerText)}>Gallery</button>
+               <button onClick={(e)=>setActive(e.target.innerText)}>Book online</button>
+               <button onClick={(e)=>setActive(e.target.innerText)}>Contact us</button>
+             </ul>}
+
+             </div>
+
+
+             
+
         </nav>
     )
 }
