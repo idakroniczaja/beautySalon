@@ -64,8 +64,8 @@ color: skyblue;
   .content .images{
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-auto-rows: 10vh;
-    box-shadow: 1vw 2.2vh 2vw #888888;
+    grid-auto-rows: 50%;
+    box-shadow: 1vw 6vh 2vw #888888;
   }
 
   .content .images img{

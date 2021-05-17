@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import NavBar from './NavBar';
 
 
@@ -21,15 +21,12 @@ export default function Background() {
     const [active, setActive] = useState('Content');
 
 ///to save value after refresh
-// useEffect (()=>{
-//     const savedContent = localStorage.getItem(LOCAL_STORAGE_KEY);
-//    console.log(savedContent)
-//      if (savedContent)   setActive(savedContent)
-
-     
-
-//      console.log(localStorage)
-// },[])
+useEffect (()=>{
+    const savedContent = localStorage.getItem(LOCAL_STORAGE_KEY);
+   console.log(savedContent)
+     if (savedContent)   setActive(savedContent)
+     console.log(localStorage)
+},[])
 
 //to set value of active content to home page automatically after 10 min
 // useEffect (()=>{
@@ -39,10 +36,10 @@ export default function Background() {
 
 //to set value to local storage
 
-    // useEffect(()=>{
-    //     localStorage.setItem(LOCAL_STORAGE_KEY, active)
-    //     console.log(localStorage)
-    // }, [active])
+    useEffect(()=>{
+        localStorage.setItem(LOCAL_STORAGE_KEY, active)
+        console.log(localStorage)
+    }, [active])
 
 
 

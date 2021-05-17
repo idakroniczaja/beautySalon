@@ -1,5 +1,5 @@
 import React from 'react';
-import {Flip, Zoom}  from 'react-reveal';
+
 import './Content.css';
 
 

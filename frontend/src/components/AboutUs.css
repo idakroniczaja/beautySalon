@@ -1,7 +1,113 @@
 .about-us{
-    background-color: thistle;
     width: 50vw;
-    height: 50vh;
+    height: 80vh;
     float:right;
     position: relative;
+    color: #646f70;
+    padding: 0;
+    margin: 0;
+
+}
+/* HISTORY*/
+.history{
+    height: 40vh;
+    position: relative;
+
+}
+
+.history .background{
+    width: 33vw;
+    height: 30vh;
+    background-color: #D4E7E8;
+    float: right;
+}
+
+.history .history-content{
+width: 50vw;
+height: 40vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+position:absolute;
+
+}
+
+.history .history-text {
+    background-color: transparent;
+    width: 20vw;
+    text-align: justify;
+    z-index: 2;
+    font-size: 1.25em;
+
+}
+
+.history .history-text h1{
+color: #BACACB;
+padding: 0 0.5em;
+margin: 0;
+font-size: 2.5em;   
+font-style: italic;
+font-weight:normal
+}
+.history .history-text h2{
+    padding: 0 1.5em;
+    margin: 0;
+    font-size: 1.25em;
+    font-family: cursive;
+ 
+}
+
+
+.history img {
+    width:13em;
+    z-index: 1;
+    border: 0.25em solid white;
+}
+
+
+
+
+/* INTRO */
+.introduction{
+    height: 40vh;
+    position: relative;
+}
+.introduction .background{
+    width: 33vw;
+    height: 30vh;
+    background-color: #D4E7E8;
+    float: left;
+}
+
+
+.introduction .intro-content{
+    width: 50vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:absolute;
+    
+    }
+
+
+.introduction .introduction-text {
+    background-color: transparent;
+    width: 20vw;
+    text-align: justify;
+    z-index: 2;
+    font-size: 1.2em;
+}
+.introduction .introduction-text :last-child{
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bolder;
+
+}
+
+
+.introduction img {
+    width:13em;
+    z-index: 1;
+    border: 0.25em solid white;
 }

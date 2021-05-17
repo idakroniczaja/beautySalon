@@ -3,7 +3,7 @@ nav{
     display: flex;
     align-items:center;
     justify-content: center;
-    height: 20vh;
+    height: 15vh;
     width: 66vw;
     float: right;
     position: relative;
@@ -46,7 +46,7 @@ nav button:hover{
 }
 
 nav img{
-    width: 15vw;
+    width: 13vw;
 }
 
 
@@ -64,17 +64,7 @@ nav img{
   }
 
 
-  /* @media(max-width:1030px){
  
-    nav .nav-bar-full{
-        font-size: 0.6em;
-    }
-
-    nav img{
-        width: 13vw;
-    }
-    
-  } */
 
   @media(max-width:850px){
       nav{
