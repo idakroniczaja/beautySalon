@@ -12,6 +12,7 @@ nav .hamburger__menu{
         cursor: pointer;
         display: none;
         color: #9f9f9f;
+        margin-top: -2em;
 }
 
 .hamburger__menu:hover {
@@ -66,10 +67,9 @@ nav img{
 
  
 
-  @media(max-width:850px){
+  @media(max-width:1024px){
       nav{
           justify-content: space-around;
-          height: 17vh;
           margin-bottom: 2em;
       }
       nav .nav-bar-full{
@@ -108,6 +108,14 @@ nav img{
         padding-top: 0.6em;
     }
   }
+
+  @media(max-width:700px){
+    nav .nav-bar-drop{
+        font-size: 0.7em;
+        padding-right: 10vw;
+    }
+  }
+
 
   @media (max-width:375px){
     nav .nav-bar-drop{

@@ -12,13 +12,14 @@
 .history{
     height: 40vh;
     position: relative;
-
 }
 
 .history .background{
     width: 33vw;
     height: 30vh;
     background-color: #D4E7E8;
+   position: relative;
+    z-index: 1;
     float: right;
 }
 
@@ -29,38 +30,38 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 position:absolute;
+z-index: 2;
 
 }
 
 .history .history-text {
     background-color: transparent;
-    width: 20vw;
+    width: 60%;
     text-align: justify;
     z-index: 2;
-    font-size: 1.25em;
-
 }
 
 .history .history-text h1{
 color: #BACACB;
-padding: 0 0.5em;
+padding: 0 5%;
 margin: 0;
-font-size: 2.5em;   
+font-size: 5vh;   
 font-style: italic;
 font-weight:normal
 }
 .history .history-text h2{
-    padding: 0 1.5em;
+    padding: 0 1.5rem;
     margin: 0;
-    font-size: 1.25em;
+    font-size: 3vh;
     font-family: cursive;
- 
+}
+.history .history-text p{
+font-size: 1.25rem;
 }
 
 
 .history img {
     width:13em;
-    z-index: 1;
     border: 0.25em solid white;
 }
 
@@ -77,6 +78,8 @@ font-weight:normal
     height: 30vh;
     background-color: #D4E7E8;
     float: left;
+    position: absolute;
+    z-index: 1;
 }
 
 
@@ -87,15 +90,15 @@ font-weight:normal
     justify-content: space-around;
     align-items: center;
     position:absolute;
+    z-index: 2;
     
     }
 
 
 .introduction .introduction-text {
     background-color: transparent;
-    width: 20vw;
+    width: 60%;
     text-align: justify;
-    z-index: 2;
     font-size: 1.2em;
 }
 .introduction .introduction-text :last-child{
@@ -108,6 +111,289 @@ font-weight:normal
 
 .introduction img {
     width:13em;
-    z-index: 1;
     border: 0.25em solid white;
+}
+
+
+.bottom-image img{
+    display: none;
+}
+
+@media(max-width:1600px){
+
+    .history .history-text p{
+        font-size: 1.15rem;
+     
+    }
+    .introduction .introduction-text {
+        font-size: 1.1rem;
+    }
+    .introduction img, .history img {
+        width: 12vw;
+    }
+
+}
+
+@media(max-width:1600px){
+    .history .history-text p{
+        font-size: 1.1rem;
+    }
+    .introduction .introduction-text {
+        font-size: 1rem;
+    }
+    
+}
+
+
+@media(max-width:1060px){
+    .history .history-text p{
+        font-size: 1rem;
+    }
+    .introduction .introduction-text {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media(max-width:1024px){
+ .about-us{
+     padding-right: 4em;
+ }
+ .history .history-text h1{
+     font-size: 3rem;
+}
+.history .history-text h2{
+    font-size: 2rem;
+}
+.history .history-content{
+
+    align-items: flex-start;
+    padding-top: 2.5em;
+}
+.history .history-content img{
+    margin-top: 9em;
+}
+
+
+.introduction .intro-content{
+    align-items: flex-start;
+    padding-top: 2.5em;
+}
+}
+
+@media(max-width:915px){
+    .history .history-text h1{
+        font-size: 2rem;
+   }
+   .history .history-text h2{
+    font-size: 1.5rem;
+}
+   
+
+   .introduction .introduction-text {
+       margin-top: -4em;
+   }
+
+   .history .history-content img{
+    margin-top: 5em;
+}
+
+}
+
+@media(max-width:768px){
+.history{
+    height: 40vh;
+}
+.history .history-text{
+    margin-top: -2.5em;
+    width: 48%;
+}
+.history .history-text h1{
+font-size: 2.5em;
+margin-left: -1em;
+}
+.history .history-text h2{
+    width: 50vw;
+}
+.history .history-text p{
+    font-size: 0.9em;
+}
+.introduction .introduction-text {
+    font-size: 0.8rem;
+    padding-top: 0.5em;
+}
+
+}
+
+
+
+@media(max-width:730px){
+    .history .history-text{
+        margin-top: -2em;
+      }
+   
+     .history .history-text h2{
+      width: 30vw;
+      padding: 0;
+  }
+
+
+
+  .introduction .introduction-text :last-child{
+      font-size: 1.5em;
+      width: 70vw;
+  }
+  .history .history-content img, .introduction img{
+      margin: 0;
+      border: 0.15em solid white;
+  }
+ 
+}
+
+@media(max-width:700px){
+
+    .history .history-text h1{
+        font-size: 1.8rem;
+   }
+   .history .history-text h2{
+    font-size: 1.2rem;
+}
+.history .history-text p{
+    font-size: 0.7em;
+}
+.history .history-content img, .introduction img{
+    margin: 0;
+    border: 0.15em solid white;
+}
+.introduction .introduction-text {
+    font-size: 0.6rem;
+    margin-top: -6em;
+}
+.bottom-image img{
+    display: block;
+    width: 200%;
+    position: relative;
+    float: right;
+    margin-top: -10em;
+    z-index: 1;
+    margin-right: -3em;
+
+}
+
+}
+
+@media(max-width:600px){
+    .about-us{
+        padding: 0;
+    }
+    .history .history-content{
+        margin-left: -1em;
+    }
+
+    .introduction
+.intro-content{
+    margin-left: -3em;
+}
+
+.introduction .introduction-text{
+padding-top: 2em;
+}
+
+.history img, .introduction img{
+    width: 15vw;
+}
+   
+    .bottom-image img{
+        margin-right: 0;
+}
+
+}
+
+@media(max-width:580px){
+    .about-us{
+        padding: 0;
+    }
+    .history .history-content{
+     margin-left: -2em;
+     width: 60vw;
+    }
+    .history .history-text h1{
+        font-size: 1.5rem;
+   }
+   .history .history-text p{
+    font-size: 0.6rem;
+}
+   .history .history-text h2{
+    font-size: 1rem;
+
+}
+.introduction{
+    margin-top: -3em;
+}
+.introduction
+.intro-content{
+    margin-left: -4em;
+    margin-top: 1em;
+    width: 60vw;
+}
+
+.history .history-content img, .introduction img{
+    width: 18vw;
+    margin: 0 1em ;
+    
+}
+}
+
+@media(max-width:540px){
+
+    .about-us{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       padding-top: 3em; 
+     
+    }
+
+    .history{
+        height: 60vh;
+        width: 80vw;
+        margin-left: -4em;       
+       
+    }
+    .history .history-content{
+        width: 80vw;
+        padding-left: -5%;
+        margin-left: 1em;
+    }
+    
+
+    .history .background, .introduction .background {
+        width: 40vw;
+        height: 40vh;
+    }
+
+    .history .history-text h1{
+        font-size: 2.5em;
+        padding:0;
+        margin: 0;
+    }
+    .history .history-text p{
+        font-size: 1em;
+    }
+    
+ .introduction
+.intro-content p{
+    font-size: 1.5em;
+    width: 50vw;
+
+}
+.bottom-image img{
+    display: none;
+    }
+
+    .history .history-content img, .introduction img{
+        width: 22vw;
+        margin: 0 1em ;
+        
+    }
 }

@@ -58,6 +58,9 @@ export default function AboutUs() {
         
             
         </div>
+                <div className='bottom-image'>
+                         <img src='/images/tommy-kwak-SYn4fb6kl2I-unsplash.png'/>
+                </div>
         
         </section>
 
