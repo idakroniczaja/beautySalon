@@ -166,7 +166,6 @@ font-size: 1.25rem;
     font-size: 2rem;
 }
 .history .history-content{
-
     align-items: flex-start;
     padding-top: 2.5em;
 }
@@ -395,5 +394,94 @@ padding-top: 2em;
         width: 22vw;
         margin: 0 1em ;
         
+    }
+}
+@media(max-width:420px){
+    .bottom-image img{
+    display: block;
+    position: fixed;
+    width: 100%;
+    margin-left: -13em;
+    margin-top: 2em;
+        }
+
+.about-us{
+padding: 0;
+margin: 0;
+}
+    .history {
+            margin: 0;
+            padding: 0;
+        }
+
+        .history .background{
+            margin-right: -2em;
+        }
+
+        .history .history-content .history-text{
+            width: 50vw;
+        }
+
+        .history .history-content img, .introduction img{
+            width: 25vw;
+        }
+
+      
+    .introduction{
+        padding: 0;
+        margin: 0;
+    }
+    .introduction .introduction-text{
+       width: 20vw;
+       margin-top: -9em;
+        }
+}
+@media (max-width:375px){
+    .history .history-text h1{
+        font-size: 2em;
+    }
+
+    .history .history-text h2{
+        width: 45vw;
+ 
+    }
+
+    .history .history-content{
+               padding-left: 2em;
+    }
+
+    .history .history-content .history-text p {
+        font-size: 0.7em;
+    }
+
+    .history .history-content img{
+    
+          margin-right: 3em;
+    }
+
+    .introduction .intro-content .introduction-text p{
+        font-size: 1.2em;
+    }
+
+}
+
+@media(max-width:320px){
+
+    .introduction {
+        margin-left: 2em;
+    }
+
+    .history .history-content img, .introduction img{
+        display:none
+    }
+
+    .introduction .intro-content .introduction-text p{
+        width: 60vw;
+        margin-top: -0.5em;
+    }
+  
+    .bottom-image img{
+        margin-left: -10em;
+        margin-top: 1em;
     }
 }

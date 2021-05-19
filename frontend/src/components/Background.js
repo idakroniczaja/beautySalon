@@ -47,7 +47,7 @@ useEffect (()=>{
     return (
 
         <div className='background'>
-        <NavBar setActive={setActive} />
+        <NavBar className='navBar' setActive={setActive} />
 
         {active === 'About us' && <AboutUs />}
         {active === 'Services' && <Services />}

@@ -123,3 +123,14 @@ nav img{
         padding-right: 5vw;
     }
   }
+
+  @media (max-width:375px){ 
+      nav{
+     margin-right: -3em;
+      }
+      nav .nav-bar-drop button{
+
+         padding-left: 3em;
+         width: 80vw;
+      }
+  }
