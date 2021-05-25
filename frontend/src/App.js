@@ -1,12 +1,13 @@
-import './App.css';
 import {Switch, Link, Route} from 'react-router-dom';
+
+import './App.css';
 
 import Background from './components/Background';
 
 function App() {
   return (
-    <div>
-    <Background/>
+    <div className='App'>
+    {/* <Background/> */}
 
   
     </div>
