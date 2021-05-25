@@ -1,0 +1,10 @@
+.header{
+    /* background-color:rgba(0, 0, 55, 0.5); */
+    width: 80%;
+    height: 80vh;
+    color: #9FADAE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}

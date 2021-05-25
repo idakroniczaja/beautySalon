@@ -1,4 +1,7 @@
 import React, {useState} from 'react';
+import {Link} from 'react-router-dom'
+
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
@@ -6,13 +9,27 @@ import './NavBar.css'
 
 
 export default function NavBar({setActive}) {
-    const [toggle, setToggle]=useState(false)
+//     const [toggle, setToggle]=useState(false)
 
-const bars = <FontAwesomeIcon icon={faBars} />
+// const bars = <FontAwesomeIcon icon={faBars} />
 
     return (
         <nav>
-        <img src='/images/nafkar-logo.png' alt='nafkar logo'/>
+
+        <ul>
+            <li><Link>Home</Link></li>
+            <li><Link>About</Link></li>
+            <li><Link>Services</Link></li>
+            <li><Link>Gallery</Link></li>
+            <li><Link>Contact</Link></li>
+        </ul>
+
+
+
+
+
+
+        {/* <img src='/images/nafkar-logo.png' alt='nafkar logo'/>
 
 
             <ul className='nav-bar-full'>
@@ -38,7 +55,7 @@ const bars = <FontAwesomeIcon icon={faBars} />
                <button onClick={(e)=>setActive(e.target.innerText)}>Contact us</button>
              </ul>}
 
-             </div>
+             </div> */}
 
 
              

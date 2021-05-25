@@ -7,8 +7,9 @@ import './Content.css';
 export default function Content() {
     return (
       
-        <div className='content'>
-
+        <div className='container content'>
+        CONTENT
+{/* 
             <h1>Your best <br/><span>beauty ritual</span></h1>
 
             <p>
@@ -21,7 +22,7 @@ export default function Content() {
                 <img src='/images/juja-han-Z8-6EI2tYtw-unsplash.jpg' alt='nafkar logo' width='25%'/>
                 <img src='/images/1111.jpg' alt='nafkar logo' width='25%'/>
                 <img src='/images/tommy-van-kessel-_tnkR2gu3kw-unsplash.jpg' alt='nafkar logo' width='25%'/>
-            </div>
+            </div> */}
 
         </div>
       

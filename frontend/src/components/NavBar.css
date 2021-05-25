@@ -1,4 +1,31 @@
 nav{
+    /* background-color:rgba(100, 0, 0, 0.5) */
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+nav li{
+    padding: 1em 0;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #9FADAE;
+}
+
+
+
+
+
+
+
+
+
+/* nav{
     z-index: 1;
     display: flex;
     align-items:center;
@@ -133,4 +160,4 @@ nav img{
          padding-left: 3em;
          width: 80vw;
       }
-  }
+  } */
