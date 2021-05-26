@@ -9,11 +9,11 @@ export default function Gallery() {
 
 
 
-                    <div className='gallery'>
+                    <section className='gallery'>
                 
                         Gallery
                 
-                    </div>
+                    </section>
     
 
         

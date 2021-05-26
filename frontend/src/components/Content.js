@@ -2,13 +2,35 @@ import React from 'react';
 
 import './Content.css';
 
+import Home from './Home'
+import About from './About'
+import Services from './Services'
+import Gallery from './Gallery'
+import Contact from './Contact'
+
+
+import { faHotdog } from '@fortawesome/free-solid-svg-icons';
+
 
 
 export default function Content() {
     return (
       
         <div className='container content'>
-        CONTENT
+
+        <Home/>
+        <About/>
+        <Services/>
+        <Gallery/>
+        <Contact/>
+
+
+
+
+
+
+
+        
 {/* 
             <h1>Your best <br/><span>beauty ritual</span></h1>
 
@@ -23,6 +45,14 @@ export default function Content() {
                 <img src='/images/1111.jpg' alt='nafkar logo' width='25%'/>
                 <img src='/images/tommy-van-kessel-_tnkR2gu3kw-unsplash.jpg' alt='nafkar logo' width='25%'/>
             </div> */}
+
+     
+
+ 
+
+            
+
+        
 
         </div>
       

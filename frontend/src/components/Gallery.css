@@ -1,8 +1,5 @@
 .gallery{
-    width: 50vw;
-    height: 50vh;
+
     background-color:tomato;
-    float:right;
-    position: relative;
-    transition:ease-in
+
 }

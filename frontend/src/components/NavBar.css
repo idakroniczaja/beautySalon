@@ -17,6 +17,13 @@ nav a{
     color: #9FADAE;
 }
 
+nav a:hover{
+    color:skyblue;
+}
+
+nav ul li:hover{
+    list-style:'− ' inside;
+}
 
 
 

@@ -1,13 +1,15 @@
 import React from 'react';
 
-import './AboutUs.css'
+import './About.css'
 
-export default function AboutUs() {
+export default function About() {
     return (
 
-        <section className='about-us'>
+        <section className='about'>
 
-        <div className='history'>
+        about
+
+        {/* <div className='history'>
         <div className='history-content'>
             <div className='history-text'>
                 <h1>WELCOME</h1>
@@ -61,7 +63,7 @@ export default function AboutUs() {
                 <div className='bottom-image'>
                          <img src='/images/tommy-kwak-SYn4fb6kl2I-unsplash.png'/>
                 </div>
-        
+         */}
         </section>
 
     )
