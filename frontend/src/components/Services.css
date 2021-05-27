@@ -1,3 +1,37 @@
 .services{
-    background-color:wheat;
+    background-color:rgba(100, 111, 112, 0.5);
+    padding-bottom: 2em;
+}
+
+.services h2{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 3px 3px 5px #6b7779;
+}
+
+
+.services .button-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.services .button-list button{
+    background-color: #8f9d9e;
+    border: none;
+    height: 55px;
+    margin: 0.75em 0;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: white;
+    text-align: left;
+}
+
+
+.services .button-list button:hover{
+
+
 }
