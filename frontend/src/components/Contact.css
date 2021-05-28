@@ -1,3 +1,85 @@
 .contact{
-background-color: lightcoral;
+  background-color:rgba(212, 231, 232, 0.692);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10em;
+  padding-bottom: 3em;
+  
   }
+
+  .contact .working-hours, .contact-info, .direction{
+       width: 80%;
+       display: flex;
+       margin-bottom: 2em;
+       color: #6b7779;
+       
+  }
+
+.contact .working-hours{
+  border: 1px solid white;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+}
+
+.contact .working-hours .working-hours-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-top: -3em;
+}
+
+
+
+.contact .working-hours .working-hours-info h3{
+  margin: 0;
+  padding: 1em 0 0;
+}
+
+
+
+.contact .contact-info{
+
+  justify-content: space-between;
+  font-size: 1.7rem;
+}
+
+.contact .contact-info p{
+  padding-top: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid white;
+
+}
+
+.contact .contact-info p:first-child::after{
+  content: 'phone number';
+  display: block;
+
+}
+
+.contact .contact-info a{
+  text-decoration: none;
+  color: #6b7779;
+}
+
+
+
+.contact .contact-info a:hover{
+
+}
+
+
+.contact .direction{
+  background-color: thistle;
+  justify-content: space-between;
+}
+
+.contact .address{
+
+  background-color: yellow;
+}

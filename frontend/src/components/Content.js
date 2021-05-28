@@ -24,12 +24,6 @@ export default function Content() {
         <Gallery/>
         <Contact/>
 
-
-
-            
-
-        
-
         </div>
       
     )

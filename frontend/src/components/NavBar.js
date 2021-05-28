@@ -20,7 +20,7 @@ export default function NavBar({setActive}) {
             <li><Link>Home</Link></li>
             <li><Link>About</Link></li>
             <li><Link>Services</Link></li>
-            <li><Link>Gallery</Link></li>
+            <li><Link to='/gallery'>Gallery</Link></li>
             <li><Link>Contact</Link></li>
         </ul>
 

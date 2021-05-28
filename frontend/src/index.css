@@ -23,11 +23,12 @@ body {
 
 .container{
   z-index: 1;
-  width: 100%;
+  width: 50%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: blue; */
 }
 
 .content-wrapper {

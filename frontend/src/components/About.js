@@ -14,7 +14,7 @@ export default function About() {
         <div className='images'>
                 <img src='/images/toa-heftiba-hBLf2nvp-Yc-unsplash.jpg' alt='masage' width='50%'/>
                 <img src='/images/juja-han-Z8-6EI2tYtw-unsplash.jpg' alt='pedicure' width='50%'/>
-                <img src='/images/1111.jpg' alt='hair' width='50%'/>
+                <img src='/images/pexels-helena-ije-2867899.jpg' alt='hair' width='50%'/>
                 <img src='/images/tommy-van-kessel-_tnkR2gu3kw-unsplash.jpg' alt='brows and lashes' width='50%'/>
             </div> 
 
