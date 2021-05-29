@@ -9,18 +9,19 @@ import './NavBar.css'
 
 
 export default function NavBar({setActive}) {
-//     const [toggle, setToggle]=useState(false)
 
-// const bars = <FontAwesomeIcon icon={faBars} />
+const [toggle, setToggle]=useState(false)
+
+
 
     return (
         <nav>
-
+{console.log(toggle)}
         <ul>
             <li><Link>Home</Link></li>
             <li><Link>About</Link></li>
             <li><Link>Services</Link></li>
-            <li><Link to='/gallery'>Gallery</Link></li>
+            <li onClick={()=>setToggle(!toggle)}><Link >Gallery</Link></li>
             <li><Link>Contact</Link></li>
         </ul>
 

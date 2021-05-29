@@ -8,7 +8,7 @@ import Header from './Header'
 
 export default function Gallery() {
     return (
-        <section className='gallery'>
+        <section className='gallery' >
             <div className='grid-container'>
                 <img src='/images/360_F_383811898_60mdCal4ST111MFuZaX0pSitjxtsUHxQ.jpg' />
                 <img src='/images/anna-kumpan-3J5K-Jb6GRM-unsplash.jpg' />

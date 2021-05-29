@@ -28,11 +28,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: blue; */
 }
 
 .content-wrapper {
   width: 95%;
   margin: 0;
   padding: 0 2em;
+}
+
+
+@media (max-width:1000px){
+  .App{
+    flex-direction: column;
+    
+
+  
+  }
+  .container{
+    width: 100%;
+    height:fit-content
+    
+  }
+
 }

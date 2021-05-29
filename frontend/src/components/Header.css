@@ -8,3 +8,15 @@
     height:80vh;
     width: 40%;
 }
+
+@media (max-width:1000px){
+ .header{
+     height: 20vh;
+     width: 100%;
+     position: fixed;
+ }
+
+ .header.active{
+     background-color: white;
+ }
+}

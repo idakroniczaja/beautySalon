@@ -6,6 +6,7 @@ export default function About() {
     return (
 
         <section className='content-wrapper about'>
+       
         <p className='intro'>
             <span>THE MOMENTS YOU DESERVE ONLY FOR YOU.</span> Escape from everyday busy reality and treat yourselfe with intensive care. 
             Beauty and health go hand in hand. The combination of quality cosmetics and state-of-the-art aesthetic technologies creates an irresistible combination that leaves the skin soft, supple and nourished.

@@ -50,15 +50,22 @@
 }
 
 .contact .contact-info p{
+
   padding-top: 2em;
   padding-bottom: 1em;
-  border-bottom: 1px solid white;
+  text-align: center;
 
 }
 
-.contact .contact-info p:first-child::after{
+.contact .contact-info p:first-child::after,
+.contact .contact-info a::after
+{
   content: 'phone number';
   display: block;
+  font-size: 0.85rem;
+  border-top: 1px solid white;
+  padding: 1em;
+  margin: 1em;
 
 }
 
@@ -68,18 +75,51 @@
 }
 
 
-
-.contact .contact-info a:hover{
-
+.contact .contact-info a::after{
+  content: 'book now';
 }
 
 
 .contact .direction{
-  background-color: thistle;
+ 
   justify-content: space-between;
+  align-items: center;
 }
 
+
+
+.contact .direction h2{
+
+  font-size: 2rem;
+  width: 40%;
+  text-align: center;
+
+}
 .contact .address{
-
-  background-color: yellow;
+  border: 1px solid white;
+  text-align: center;
+  width: 40%;
+ 
 }
+
+.contact .address a{
+  text-decoration: none;
+  color: #6b7779;
+}
+
+.contact .address>p:first-child{
+  padding: 2em;
+  border-bottom: 1px solid white;
+  font-size: 1.3rem;
+
+
+}
+
+.contact .address :last-child{
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform:uppercase;
+}
+

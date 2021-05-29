@@ -28,7 +28,11 @@ nav ul li:hover{
 }
 
 
-
+@media (max-width:1000px){
+    nav{
+        display: none;
+    }
+}
 
 
 

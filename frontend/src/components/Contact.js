@@ -1,4 +1,7 @@
 import React, {useEffect, useState} from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import {faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
 
 
 import './Contact.css'
@@ -41,8 +44,8 @@ useEffect(() => {
                 </div>
                 <div className='working-hours-info'>
 
-  {(new Date().getDay()!==0 && new Date().getDay()!==6 && new Date().getHours()>8 && new Date().getHours() < 19) ? <p>We arre currently open.</p>
-                        : (new Date().getDay()===6 && new Date().getHours()>9 && new Date().getHours() < 17) ? <p>We arre currently open.</p>
+  {(new Date().getDay()!==0 && new Date().getDay()!==6 && new Date().getHours()>8 && new Date().getHours() < 18) ? <p>We are currently open.</p>
+                        : (new Date().getDay()===6 && new Date().getHours()>9 && new Date().getHours() < 16) ? <p>We are currently open.</p>
                         : <p>Sorry, we are closed now.</p>
                         } 
                     <h3>Our working hours:</h3>
@@ -57,7 +60,7 @@ useEffect(() => {
 
             <div className='contact-info'>
                 <p>(786)395-8506</p>
-                <p><a href='https://www.vagaro.com/nafkarbeauty/book-now'>Book now</a></p>
+                <p><a href='https://www.vagaro.com/nafkarbeauty/book-now'>www.vagaro.com</a></p>
             </div>
 
 
@@ -65,7 +68,7 @@ useEffect(() => {
                 <h2>Where to find us?</h2>
                 <div className='address'>
                     <p>400 Alton Road suite 105<br/>Miami Beach, FL, FL 33139</p>
-                    <p><a>google maps</a></p>
+                    <p><a href='#'><FontAwesomeIcon icon={faMapMarkerAlt}/>  google maps</a></p>
 
                     
                 </div>

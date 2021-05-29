@@ -11,7 +11,15 @@
 }
 
 
+@media (max-width:1000px){
+  .content{
+    z-index: -1;
 
+    
+   
+  }
+ 
+}
 
 
 
