@@ -1,4 +1,4 @@
-import React, {useState}from 'react';
+import React, {useState} from 'react';
 
 import './Content.css';
 
@@ -9,25 +9,23 @@ import Gallery from './Gallery'
 import Contact from './Contact'
 
 
-import { faHotdog } from '@fortawesome/free-solid-svg-icons';
+
+export default function Content({active, setActive, changeToHome, changeToAbout, changeToServices, changeToContact}) {
 
 
-
-export default function Content() {
-
-const [active, setActive] = useState(false)
 
 
     return (
  
       
         <div className='container content'>
-  {/* { console.log(click)} */}
-        <Home/>
-        <About/>
-        <Services/>
-        <Gallery />
-        <Contact/>
+
+        <Home changeToHome={changeToHome}/>
+        <About changeToAbout={changeToAbout}/>
+        <Services changeToServices={changeToServices} />
+        {active && <Gallery/>}
+        
+        <Contact changeToContact={changeToContact}/>
 
         </div>
       

@@ -8,21 +8,17 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import './NavBar.css'
 
 
-export default function NavBar({setActive}) {
-
-const [toggle, setToggle]=useState(false)
-
-
+export default function NavBar({active, setActive, goToHome, goToAbout, goToServices, goToContact}) {
 
     return (
         <nav>
-{console.log(toggle)}
+
         <ul>
-            <li><Link>Home</Link></li>
-            <li><Link>About</Link></li>
-            <li><Link>Services</Link></li>
-            <li onClick={()=>setToggle(!toggle)}><Link >Gallery</Link></li>
-            <li><Link>Contact</Link></li>
+            <li onClick={goToHome}><Link>Home</Link></li>
+            <li onClick={goToAbout}><Link>About</Link></li>
+            <li onClick={goToServices}><Link>Services</Link></li>
+            <li onClick={()=>setActive(!active)}><Link >Gallery</Link></li>
+            <li onClick={goToContact}><Link>Contact</Link></li>
         </ul>
 
 

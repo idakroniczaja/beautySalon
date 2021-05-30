@@ -2,10 +2,10 @@ import React from 'react';
 
 import './About.css'
 
-export default function About() {
+export default function About({changeToAbout}) {
     return (
 
-        <section className='content-wrapper about'>
+        <section ref={changeToAbout} className='content-wrapper about'>
        
         <p className='intro'>
             <span>THE MOMENTS YOU DESERVE ONLY FOR YOU.</span> Escape from everyday busy reality and treat yourselfe with intensive care. 

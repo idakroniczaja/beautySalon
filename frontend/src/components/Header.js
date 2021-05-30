@@ -6,11 +6,12 @@ import Logo from './Logo';
 import NavBar from './NavBar';
 import Reservations from './Reservations';
 
-export default function Header() {
+export default function Header({active, setActive, goToHome, goToAbout, goToServices, goToContact}) {
+
 const [header,setHeader] = useState(false)
 
 const changeBackground = () =>{
-    // console.log(window.header)
+
     if(window.scrollY>=316){
         setHeader(true)
     }else{
@@ -25,7 +26,7 @@ window.addEventListener('scroll', changeBackground)
         <div className='container'>
             <div className={header ? 'header active' : 'header'}>
             <Logo/>
-            <NavBar/>
+            <NavBar active={active} setActive={setActive} goToHome={goToHome} goToAbout={goToAbout} goToServices={goToServices} goToContact={goToContact}/>
             <Reservations/>
             </div>
         </div>

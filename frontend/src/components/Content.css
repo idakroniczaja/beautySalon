@@ -10,6 +10,9 @@
   height:unset
 }
 
+.scroll{
+  top:0
+}
 
 @media (max-width:1000px){
   .content{

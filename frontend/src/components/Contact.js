@@ -8,7 +8,7 @@ import './Contact.css'
 
 import Clock from './Clock'
 
-export default function Contact() {
+export default function Contact({changeToContact}) {
 
     const [secondRatio, setSecondRatio] = useState(0)
     const [minuteRatio, setMinuteRatio] = useState(0)
@@ -33,7 +33,7 @@ useEffect(() => {
     return (
  
 
-        <section className='content-wrapper contact'>
+        <section ref={changeToContact} className='content-wrapper contact'>
 
             <div className='working-hours'>
 

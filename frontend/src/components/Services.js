@@ -3,10 +3,10 @@ import React from 'react';
 
 import './Services.css'
 
-export default function Services() {
+export default function Services({changeToServices}) {
     return (
 
-            <div className='content-wrapper services'>
+            <div ref={changeToServices} className='content-wrapper services'>
 
                 <h2>Services</h2>
 
