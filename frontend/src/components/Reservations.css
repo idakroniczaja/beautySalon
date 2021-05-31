@@ -16,3 +16,26 @@
 
 }
 
+.icon{
+    color:rgb(87, 184, 223);
+    display: none;
+
+  
+}
+
+@media (max-width:1000px){
+    .icon{
+        display: block;
+        font-size: 1.5rem;
+        margin-right: 2em;
+
+   
+    }
+
+    .reservations{
+        display: none;
+    }
+
+
+
+}

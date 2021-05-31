@@ -11,12 +11,18 @@
 
 @media (max-width:1000px){
  .header{
-     height: 20vh;
+     height: 10vh;
      width: 100%;
      position: fixed;
+     flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 5em;
+    padding-left: 1.5em;
+
  }
 
  .header.active{
-     background-color: white;
+     background-color: #D4E7E8;
  }
 }

@@ -6,10 +6,10 @@ import {Link} from 'react-router-dom'
 import './Gallery.css';
 import Header from './Header'
 
-export default function Gallery() {
+export default function Gallery({changeToGallery}) {
     return (
-        <section className='gallery' >
-            <div className='grid-container'>
+        <section ref={changeToGallery} className='gallery' >
+            <div  className='grid-container'>
                 <img src='/images/360_F_383811898_60mdCal4ST111MFuZaX0pSitjxtsUHxQ.jpg' />
                 <img src='/images/anna-kumpan-3J5K-Jb6GRM-unsplash.jpg' />
                 <img src='/images/damir-spanic-TrNithFZaho-unsplash.jpg' />

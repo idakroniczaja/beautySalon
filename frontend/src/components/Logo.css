@@ -8,3 +8,17 @@
 .logo img{
     width: 35%;
 }
+
+@media (max-width:1000px){
+    .logo{
+          left:0;
+          width: 70%;
+
+      
+    
+    }
+
+    .logo img{
+        width: 120px;
+    }
+}

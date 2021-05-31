@@ -10,7 +10,7 @@ import Contact from './Contact'
 
 
 
-export default function Content({active, setActive, changeToHome, changeToAbout, changeToServices, changeToContact}) {
+export default function Content({active, setActive, changeToHome, changeToAbout, changeToServices, changeToContact, changeToGallery}) {
 
 
 
@@ -23,7 +23,7 @@ export default function Content({active, setActive, changeToHome, changeToAbout,
         <Home changeToHome={changeToHome}/>
         <About changeToAbout={changeToAbout}/>
         <Services changeToServices={changeToServices} />
-        {active && <Gallery/>}
+        {active && <Gallery changeToGallery={changeToGallery}/>}
         
         <Contact changeToContact={changeToContact}/>
 

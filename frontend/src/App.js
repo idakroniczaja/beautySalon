@@ -17,22 +17,31 @@ function App() {
   const changeToAbout = useRef(null);
   const changeToContact = useRef(null);
   const changeToServices = useRef(null);
-  console.log(changeToAbout, changeToHome, changeToContact, changeToServices)
+  const changeToGallery = useRef(null);
+
+
 
 
 const goToHome = () => window.scrollTo({top: changeToHome.current.offsetTop, behavior:'smooth'});
 const goToAbout = () => window.scrollTo({top: changeToAbout.current.offsetTop, behavior:'smooth'});
 const goToServices = () => window.scrollTo({top: changeToServices.current.offsetTop, behavior:'smooth'})
 const goToContact = () => window.scrollTo({top: changeToContact.current.offsetTop, behavior:'smooth'});
+const goToGallery = async() => {
+    if (!active){
+      await setActive(!active);
+        window.scrollTo({top: changeToGallery.current.offsetTop, behavior:'smooth'});
+    } else{
+      await setActive(!active);
+    }
+};
 
-// console.log(changeToServices.current.parentElement.className)
 
 
   return (
     <>
     <div className='App'>
-    <Header active={active} setActive={setActive} goToHome={goToHome} goToAbout={goToAbout} goToServices={goToServices} goToContact={goToContact}/>
-    <Content active={active} setActive={setActive} changeToHome={changeToHome} changeToAbout={changeToAbout} changeToServices={changeToServices} changeToContact={changeToContact}/> 
+    <Header active={active} setActive={setActive} goToHome={goToHome} goToAbout={goToAbout} goToServices={goToServices} goToContact={goToContact} goToGallery={goToGallery}/>
+    <Content active={active} setActive={setActive} changeToHome={changeToHome} changeToAbout={changeToAbout} changeToServices={changeToServices} changeToContact={changeToContact} changeToGallery={changeToGallery}/> 
     </div>
 
     </>

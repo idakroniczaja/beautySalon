@@ -1,61 +1,66 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom'
 
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import './NavBar.css'
 
 
-export default function NavBar({active, setActive, goToHome, goToAbout, goToServices, goToContact}) {
+export default function NavBar({active, setActive, goToHome, goToAbout, goToServices, goToContact, goToGallery}) {
+
+    const [toggle, setToggle] = useState(false);
+    const [windowWidt, setWindowWidth] = useState(window.innerWidth)
+
+
+
+const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+    handleToggle()
+}
+
+const handleToggle = ()=> {
+    if(window.innerWidth>1000){
+          setToggle(true)
+             }
+        else setToggle(false)
+}
+
+useEffect(() => {
+    setToggle(true)
+    window.addEventListener('resize', handleResize)
+
+    return ()=>{
+        window.removeEventListener('resize', handleResize)
+        
+    }
+},[])
+
 
     return (
         <nav>
 
-        <ul>
-            <li onClick={goToHome}><Link>Home</Link></li>
-            <li onClick={goToAbout}><Link>About</Link></li>
-            <li onClick={goToServices}><Link>Services</Link></li>
-            <li onClick={()=>setActive(!active)}><Link >Gallery</Link></li>
-            <li onClick={goToContact}><Link>Contact</Link></li>
-        </ul>
-
-
-
-
-
-
-        {/* <img src='/images/nafkar-logo.png' alt='nafkar logo'/>
-
-
-            <ul className='nav-bar-full'>
-               <button onClick={(e)=>setActive(e.target.innerText)}>About us</button>
-               <button onClick={(e)=>setActive(e.target.innerText)}>Services</button>
-               <button onClick={(e)=>setActive(e.target.innerText)}>Gallery</button>
-               <button onClick={(e)=>setActive(e.target.innerText)}>Book online</button>
-               <button onClick={(e)=>setActive(e.target.innerText)}>Contact us</button>
-            </ul>
+        <div className='burger-menu' >
+        {!toggle &&  <FontAwesomeIcon icon={faBars} onClick={()=>setToggle(true)}/>}
+            
+            {toggle && <FontAwesomeIcon icon={faTimes} onClick={()=>setToggle(false)}/>}
+            
+        </div>
+{console.log(window.innerWidth)}
+                {toggle  &&
+                                    <ul >
+                                        <li onClick={goToHome}><Link>Home</Link></li>
+                                        <li onClick={goToAbout}><Link>About</Link></li>
+                                        <li onClick={goToServices}><Link>Services</Link></li>
+                                        <li onClick={goToGallery}><Link >Gallery</Link></li>
+                                        <li onClick={goToContact}><Link>Contact</Link></li>
+                                    </ul>
+                }
+           
+            
         
-
-        
-            <div className='hamburger__menu' onClick={()=>setToggle(!toggle)}>
-            {bars}
-
-
-             {toggle && 
-             <ul className='nav-bar-drop' >
-             <button onClick={(e)=>setActive(e.target.innerText)}>About us</button>
-               <button onClick={(e)=>setActive(e.target.innerText)}>Services</button>
-               <button onClick={(e)=>setActive(e.target.innerText)}>Gallery</button>
-               <button onClick={(e)=>setActive(e.target.innerText)}>Book online</button>
-               <button onClick={(e)=>setActive(e.target.innerText)}>Contact us</button>
-             </ul>}
-
-             </div> */}
-
-
-             
 
         </nav>
     )
