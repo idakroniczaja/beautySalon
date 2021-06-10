@@ -38,7 +38,7 @@
         box-shadow: 10px 10px 7px 1px rgba(0, 0, 0, .2);
 }
 
-.nailcare{  
+.service-box{  
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -46,7 +46,7 @@
   
 }
 
-.info-category{
+.service-box-info{
     background-color: white;
     width: 45%;
     margin-top: 1em;

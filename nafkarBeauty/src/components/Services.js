@@ -3,13 +3,15 @@ import React, {useState, useEffect} from 'react';
 
 import './Services.css'
 
+import NailCare from '../components/services/NailCare'
+
 export default function Services({changeToServices}) {
 const [showing, setShowing] = useState('')
 const [clicked, setClicked] = useState(false)
 
 
-const showDiv = async (e) => {
-await setShowing(e.target.innerText);
+const showDiv = (e) => {
+setShowing(e.target.innerText);
 setClicked(!clicked)
 }
 
@@ -26,31 +28,11 @@ setClicked(!clicked)
                 <button onClick={(e)=>showDiv(e)}>Nail Care</button>
 
             {(showing === "Nail Care" && clicked) &&
-                    <div className='nailcare' >
-                        <div className="info-category">
-                            <h4>Callus removal</h4>
-                            <p className='price'>$10.00</p>
-                        </div>
-                        <div className="info-category">
-                            <h4>russian pedicure</h4>
-                            <p className='price'>$60.00</p>
-                        </div>
-                        <div className="info-category">
-                            <h4>Russian mani/pedi</h4>
-                            <p className='price'>$80.00</p>
-                        </div>
-                        <div className="info-category">
-                            <h4>Manicure and Pedicure</h4>
-                            <p className='price'>$62.00</p>
-                        </div>
-                        <div className="info-category">
-                            <h4>Callus removal</h4>
-                            <p className='price'>$10.00</p>
-                        </div>
-                    </div>
+            <NailCare/>
+        
             }
-                <button onClick={()=>setShowing('parafin')}>Parafin</button>
-{showing === 'parafin' && 
+                <button onClick={(e)=>showDiv(e)}>Parafin</button>
+{(showing === 'Parafin' && !clicked) &&
                 <div className='parafin' >
                         <div className="info-category">
                             <h4>Parafin 1</h4>
