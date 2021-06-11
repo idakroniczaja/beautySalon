@@ -1,18 +1,22 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 
 
 import './Services.css'
 
-import NailCare from '../components/services/NailCare'
+import ServiceBackend from './serviceBackend/ServiceBackend'
 
 export default function Services({changeToServices}) {
 const [showing, setShowing] = useState('')
-const [clicked, setClicked] = useState(false)
+const [clicked, setClicked] = useState(false);
+
+const services = useRef(null);
 
 
-const showDiv = (e) => {
-setShowing(e.target.innerText);
-setClicked(!clicked)
+
+const showDiv = async (e) => {
+await setShowing(e.target.innerText);
+
+
 }
 
 
@@ -24,27 +28,20 @@ setClicked(!clicked)
                 <h2>Services</h2>
          
 
-                <div className='button-list'>
-                <button onClick={(e)=>showDiv(e)}>Nail Care</button>
+                <div className='button-list' >
+                <button  onClick={(e)=>showDiv(e)}>Nail Care</button>
 
-            {(showing === "Nail Care" && clicked) &&
-            <NailCare/>
-        
+            {(showing === "Nail Care") &&
+            <ServiceBackend services={services}/>
             }
-                <button onClick={(e)=>showDiv(e)}>Parafin</button>
-{(showing === 'Parafin' && !clicked) &&
-                <div className='parafin' >
-                        <div className="info-category">
-                            <h4>Parafin 1</h4>
-                            <p className='price'>$10.00</p>
-                        </div>
-                        <div className="info-category">
-                            <h4>Parafin  jdkaj kdsljs</h4>
-                            <p className='price'>$60.00</p>
-                        </div>
-                
-                    </div>
-}
+                <button  onClick={(e)=>showDiv(e)}>Parafin</button>
+                {(showing === "Parafin") &&
+                <>
+            <ServiceBackend services={services}/>
+            
+                </>
+            }
+
                 <button>Massage</button>
                 <button>Makeup</button>
                 <button>Skincare</button>
@@ -52,7 +49,10 @@ setClicked(!clicked)
                 <button>Permanent Makeup</button>
                 <button>Waxing</button>
                 <button>Threading</button>
-                <button>Hair Care</button>
+                <button onClick={(e)=>showDiv(e)}>Hair Care</button>
+                {(showing === "Hair Care" ) &&
+            <ServiceBackend services={services}/>
+            }
                 </div>
             </div>
 

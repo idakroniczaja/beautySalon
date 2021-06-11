@@ -29,7 +29,6 @@ useEffect(()=>{
         "authorImage":author->image
     }`)
     .then(res=>{
-        console.log(res);
         setProjects(res)
     })
     .catch(console.error)
