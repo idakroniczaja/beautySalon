@@ -25,13 +25,18 @@ export default {
         type: 'number'
       },
       {
+        name: 'description',
+        title: 'Description',
+        type: 'string'
+      },
+      {
         name:'serviceType',
         title:'Service type',
         type: 'string',
         options:{
             list: [
                 {value:'Nail care', title:'Nail care'},
-                {value:'Parafin', title:'Parafin'},
+                {value:'Paraffin', title:'Paraffin'},
                 {value:'Massage', title:'Massage'},
                 {value:'Makeup', title:'Makeup'},
                 {value:'Skincare', title:'Skincare'},

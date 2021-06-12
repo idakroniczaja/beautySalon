@@ -16,10 +16,12 @@ export default function ServiceBackend({services}) {
             slug,
             price,
             serviceType,
+            description
         }`)
         .then(res=>{
-        const results = res.filter(elem=>elem.serviceType.toLowerCase()===services.current.previousElementSibling.innerText.toLowerCase())
-        setServiceType(results)   
+            const results = res.filter(elem=>elem.serviceType.toLowerCase()===services.current.previousElementSibling.innerText.toLowerCase()).sort((a,b)=>a.title.localeCompare(b.title))
+         
+            setServiceType(results)   
         })
         .catch(console.error)
     },[])
@@ -31,15 +33,19 @@ export default function ServiceBackend({services}) {
 
     {!serviceType && <h2>Loading...</h2> ||
     
-    serviceType.map(elem=>{
+    serviceType.map((elem,index)=>{
         return (
-            <div className="service-box-info">
-                <h4>{elem.title}</h4>
-                <p className='price'>$ {elem.price}</p>
+            <div key={index} className="service-box-info">
+                <span>
+                    <h4>{elem.title}</h4>
+                    <p className='price'>$ {elem.price}.00</p>
+                </span>
+                <p>{elem.description}</p>
             </div>
 )
     }
-        )  
+        )
+     
         
         
     }
