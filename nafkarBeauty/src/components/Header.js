@@ -11,7 +11,7 @@ export default function Header({active, setActive, goToHome, goToAbout, goToServ
 const [header,setHeader] = useState(false)
 
 const changeBackground = () =>{
-    if(window.scrollY>=360){
+    if(window.scrollY>=240){
         setHeader(true)
     }else{
         setHeader(false)

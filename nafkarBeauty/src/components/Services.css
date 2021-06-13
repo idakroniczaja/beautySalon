@@ -43,23 +43,22 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 0 1em 1em;
-
-  
+    animation: service 1s linear forwards;
 }
 
-.service-box:nth-last-child(){  
-background-color: red;
+@keyframes service {
+    0%{transform:translateY(-7%);opacity:0;}
+    100%{transform:translateY(0%);opacity:1;}
+    
 }
 
 .service-box-info{
     background-color: white; 
-     width: 40%;
-     min-width: 250px;
-     /* height:120px; */
+    width: 40%;
+    min-width: 300px;
     margin-top: 1em;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     align-items: center;
     border: 1px solid #8f9d9e;;;
     border-radius: 5px;

@@ -19,3 +19,9 @@
   .home h1 span{
     font-family: cursive
   }
+
+  @media (max-width:500px){
+    .home h1 {
+      font-size: 4rem;
+    }
+  }

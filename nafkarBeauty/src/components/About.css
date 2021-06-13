@@ -72,3 +72,11 @@
     display: block;
     border-radius: 50%;
 }
+
+
+@media (max-width:1000px){
+.about{
+padding: 5%;
+width: 90%;
+}
+}

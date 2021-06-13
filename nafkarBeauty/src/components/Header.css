@@ -1,5 +1,4 @@
 .header{
-    /* background-color:rgba(0, 0, 55, 0.5); */
     color: #9FADAE;
     display: flex;
     flex-direction: column;
@@ -12,11 +11,12 @@
 @media (max-width:1000px){
  .header{
      height: 10vh;
+     min-height: 100px;
      width: 100%;
      flex-direction: row;
     align-items: center;
     justify-content:space-between;
-    margin-top: 5em;
+    margin-top: 90px;
     padding-left: 1.5em;
     z-index: 5;
 
@@ -25,4 +25,12 @@
  .header.active{
      background-color: #D4E7E8;
  }
+}
+
+@media (max-width:400px){
+    .header{
+        background-color: rgba(212,231,232,75%);
+        width: 90%;
+
+    }
 }

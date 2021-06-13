@@ -27,7 +27,6 @@ useEffect(() => {
     setInterval(()=>{
         setClock()
     },1000)
- console.log(new Date().getHours())
   },[]);
 
     return (
@@ -59,16 +58,16 @@ useEffect(() => {
             </div>
 
             <div className='contact-info'>
-                <p>(786)395-8506</p>
-                <p><a href='https://www.vagaro.com/nafkarbeauty/book-now'>www.vagaro.com</a></p>
+                <p><a href="tel:7863958506">(786)395-8506</a></p>
+                <p><a id='book-now' href='https://www.vagaro.com/nafkarbeauty/book-now'>www.vagaro.com</a></p>
             </div>
 
 
             <div className="direction">
                 <h2>Where to find us?</h2>
                 <div className='address'>
-                    <p>400 Alton Road suite 105<br/>Miami Beach, FL, FL 33139</p>
-                    <p><a href='#'><FontAwesomeIcon icon={faMapMarkerAlt}/>  google maps</a></p>
+                    <p>400 Alton Road suite 105<br/>Miami Beach, FL 33139</p>
+                    <p><a href='https://goo.gl/maps/5tgKM23w8Lb4tds78'><FontAwesomeIcon icon={faMapMarkerAlt}/>  google maps</a></p>
 
                     
                 </div>

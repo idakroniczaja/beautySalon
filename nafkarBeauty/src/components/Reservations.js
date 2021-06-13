@@ -9,7 +9,7 @@ import './Reservations.css'
 export default function Reservations() {
     return (
         <div>
-            <FontAwesomeIcon icon={faPhone} className='icon'/>
+            <a href='tel:7863958506'><FontAwesomeIcon icon={faPhone} className='icon'/></a> 
             <div className='reservations'>
                 <p>RESERVATIONS - (786) 395-8506</p>
             </div>

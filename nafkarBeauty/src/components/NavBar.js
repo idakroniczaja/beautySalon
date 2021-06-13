@@ -7,7 +7,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import './NavBar.css'
-import keyframes from './NavBar.css'
+
 
 
 export default function NavBar({active, setActive, goToHome, goToAbout, goToServices, goToContact, goToGallery}) {

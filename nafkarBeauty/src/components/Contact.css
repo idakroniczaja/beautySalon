@@ -31,7 +31,6 @@
   align-items: center;
   justify-content: center;
   font-size: 1.3rem;
-  margin-top: -3em;
 }
 
 
@@ -39,6 +38,7 @@
 .contact .working-hours .working-hours-info h3{
   margin: 0;
   padding: 1em 0 0;
+  color:#646f70
 }
 
 
@@ -58,7 +58,7 @@
 }
 
 .contact .contact-info p:first-child::after,
-.contact .contact-info a::after
+.contact .contact-info #book-now::after
 {
   content: 'phone number';
   display: block;
@@ -75,13 +75,12 @@
 }
 
 
-.contact .contact-info a::after{
+.contact .contact-info #book-now::after{
   content: 'book now';
 }
 
 
 .contact .direction{
- 
   justify-content: space-between;
   align-items: center;
 }
@@ -89,7 +88,6 @@
 
 
 .contact .direction h2{
-
   font-size: 2rem;
   width: 40%;
   text-align: center;
@@ -99,6 +97,7 @@
   border: 1px solid white;
   text-align: center;
   width: 40%;
+  min-width: 250px;
  
 }
 
@@ -110,7 +109,7 @@
 .contact .address>p:first-child{
   padding: 2em;
   border-bottom: 1px solid white;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 
 
 }
@@ -123,3 +122,10 @@
   text-transform:uppercase;
 }
 
+@media (max-width:500px){
+  .contact .direction h2{
+    font-size: 1.5rem;
+    margin-right: 1em;
+
+  }
+}
