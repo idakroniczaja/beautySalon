@@ -66,12 +66,14 @@ nav a:active{
     nav ul {
         position:absolute;
         background: #BACACB;
-        width: 30%;
-        height: 40vh;
+        width: 150px;
+        height: 45vh;
+        min-height: 320px;
         display: flex;
         flex-direction: column;
         justify-content:flex-end;
         top:-17px;
+        right: 20px;
         z-index: -1;
         animation-name: navbar;
         animation-duration: 500ms;

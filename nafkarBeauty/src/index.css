@@ -13,7 +13,8 @@ body {
 .App{
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  
+  width: 100vw;
   height: 100%; 
  
 
@@ -43,7 +44,7 @@ body {
 
   }
   .container{
-    width: 100%;
+    width: 100vw;
     height:fit-content;
   }
   .content-wrapper {
@@ -52,3 +53,12 @@ body {
   }
 
 }
+
+/* @media (max-width:400px){
+  .App{
+   width: 100vw;
+   background-color: blueviolet;
+   margin: 0;
+   padding: 0;
+  }
+} */

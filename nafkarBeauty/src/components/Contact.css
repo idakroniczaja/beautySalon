@@ -126,6 +126,8 @@
   .contact .direction h2{
     font-size: 1.5rem;
     margin-right: 1em;
-
+  }
+  .contact .contact-info{
+    font-size: 1.2rem;
   }
 }

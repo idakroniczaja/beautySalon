@@ -30,7 +30,7 @@
 @media (max-width:400px){
     .header{
         background-color: rgba(212,231,232,75%);
-        width: 90%;
+        /* width: 100%; */
 
     }
 }
