@@ -11,12 +11,14 @@ const [clicked, setClicked] = useState(false);
 
 const services = useRef(null);
 
+const button1 = useRef(null)
+console.log(button1.current)
+
+const closeBtn1 = () => (button1.current);
 
 
 const showDiv = async (e) => {
 await setShowing(e.target.innerText);
-
-
 }
 
 
@@ -28,7 +30,7 @@ await setShowing(e.target.innerText);
                 <h2>Services</h2>
          
                 <div className='button-list' >
-                <button  onClick={(e)=>showDiv(e)}>Nail Care</button>
+                <button  ref={button1} onClick={(e)=>showDiv(e)}>Nail Care</button>
             {(showing === "Nail Care") &&
             <ServiceBackend services={services}/>
             }
